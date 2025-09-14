@@ -1,38 +1,73 @@
+body {
+  background-color: #282c34;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #20232a;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.App-link {
+h1 {
+  font-size: 2.5rem;
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.message {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  min-height: 50px;
 }
+
+.guess-input {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 2px solid #61dafb;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.guess-button, .new-game-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #61dafb;
+  color: #20232a;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.guess-button:hover, .new-game-button:hover {
+  background-color: #21a1f1;
+}
+
+.guess-button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+.new-game-button {
+  margin-top: 20px;
+  background-color: #ff6f61;
+}
+
+.new-game-button:hover {
+  background-color: #ff4b3a;
+}
+
